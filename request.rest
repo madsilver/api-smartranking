@@ -1,0 +1,20 @@
+@url=http://localhost:3000
+
+### Get Jogadores
+GET {{url}}/api/v1/jogadores
+
+### Get by email
+GET {{url}}/api/v1/jogadores?email=rodrigo@test.com
+
+### POST Jogadores
+POST {{url}}/api/v1/jogadores
+Content-Type: application/json
+
+{
+    "nome": "Rodrigo",
+    "email": "rodrigo@test.com",
+    "telefoneCelular": "981981981981"
+}
+
+### DELETE Jogadores
+DELETE {{url}}/api/v1/jogadores?email=rodrigo@test.com
