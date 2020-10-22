@@ -1,0 +1,30 @@
+@url=http://localhost:3000
+
+### Get Jogadores
+GET {{url}}/api/v1/jogadores
+
+### Get by email
+GET {{url}}/api/v1/jogadores?email=rodrigo@test.com
+
+### POST Jogadores
+POST {{url}}/api/v1/jogadores
+Content-Type: application/json
+
+{
+    "nome": "Rodrigo",
+    "email": "rodrigo@test.com",
+    "telefoneCelular": "+55139998876"
+}
+
+### PUT Jogadores
+PUT {{url}}/api/v1/jogadores/5f907f9fc3a119ff7f0d6b96
+Content-Type: application/json
+
+{
+    "nome": "Rodrigo Prata 99",
+    "email": "rodrigo@test.com",
+    "telefoneCelular": "+55139998876"
+}
+
+### DELETE Jogadores
+DELETE {{url}}/api/v1/jogadores/5f907c9f893271faffa2c5fc
