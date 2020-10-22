@@ -1,0 +1,30 @@
+@url=http://localhost:3000
+
+### Get Jogadores
+GET {{url}}/api/v1/categorias
+
+### POST Jogadores
+POST {{url}}/api/v1/categorias
+Content-Type: application/json
+
+{
+	"categoria": "A",
+	"descricao": "Categoria A",
+	"eventos": [{
+			"nome": "VITORIA",
+			"operacao": "+",
+			"valor": 30
+		},
+		{
+			"nome": "VITORIA_LIDER",
+			"operacao": "+",
+			"valor": 50
+		},
+		{
+			"nome": "DERROTA",
+			"operacao": "+",
+			"valor": 0
+		}
+	]
+}
+
