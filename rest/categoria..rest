@@ -1,0 +1,59 @@
+@url=http://localhost:3000
+
+### Get categoria
+GET {{url}}/api/v1/categorias
+
+### Get categoria pelo atributo categoria
+GET {{url}}/api/v1/categorias/A
+
+### POST categoria
+POST {{url}}/api/v1/categorias
+Content-Type: application/json
+
+{
+	"categoria": "A",
+	"descricao": "Categoria A",
+	"eventos": [{
+			"nome": "VITORIA",
+			"operacao": "+",
+			"valor": 30
+		},
+		{
+			"nome": "VITORIA_LIDER",
+			"operacao": "+",
+			"valor": 50
+		},
+		{
+			"nome": "DERROTA",
+			"operacao": "+",
+			"valor": 0
+		}
+	]
+}
+
+### PUT categoria
+PUT {{url}}/api/v1/categorias/C
+Content-Type: application/json
+
+{
+	"descricao": "Categoria AAA",
+	"eventos": [{
+			"nome": "VITORIA",
+			"operacao": "+",
+			"valor": 10
+		},
+		{
+			"nome": "VITORIA_LIDER",
+			"operacao": "+",
+			"valor": 80
+		},
+		{
+			"nome": "DERROTA",
+			"operacao": "+",
+			"valor": 0
+		}
+	]
+}
+
+### POST categoria
+POST {{url}}/api/v1/categorias/A/jogadores/5f907f9fc3a119ff7f0d6b9

@@ -1,0 +1,7 @@
+@url=http://localhost:3000
+
+### Get desafios
+GET {{url}}/api/v1/desafios
+
+### Get desafio pelo ID
+GET {{url}}/api/v1/desafios/1
